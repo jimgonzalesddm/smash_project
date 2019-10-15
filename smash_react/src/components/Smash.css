@@ -1,0 +1,124 @@
+.jumbotron-smash {
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 10px;
+	position: relative;
+	background-color: #fdfdfd;
+}
+
+#half-green {
+	height: 100%;
+	width: 45%;
+	background-color: #2c5b51;
+	background-image: url(../images/bd.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	/*background-position: center;*/
+}
+
+#smash-text {
+	color: #2c5b51;
+	font-size: 30vh;
+	position: absolute;
+	z-index: 1;
+	top: 38vh;
+	left: 40vh;
+	font-family: 'Saira Stencil One', cursive;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+
+#smash-text span {
+	font-family: 'Saira Stencil One', cursive;
+	color: #fdfdfd;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+
+
+
+
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	.jumbotron-smash {
+		height: 100vh;
+		width: 100%;
+		margin-bottom: 0px;
+		padding: 10px;
+		position: relative;
+		/*background-color: #2c5b51;*/
+
+	}
+
+	#half-green {
+		position: absolute;
+		top: 15vh;
+		height: 80%;
+		width: 55%;
+		background-color: #2c5b51;
+		background-size: cover;
+	}
+	
+	#smash-text {
+		font-size: 25vh;
+		z-index: 1;
+		top: 15vh;
+		left: 0vh;
+		font-family: 'Saira Stencil One', cursive;
+		writing-mode: vertical-rl;
+		color: #2c5b51; 
+	}
+	#smash-text span {
+		color: #9d484f; 
+	}
+}
+
+
+
+
+
+
+/*tablet style*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.jumbotron-smash {
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 10px;
+	position: relative;
+	/*background-color: #2c5b51;*/
+
+}
+	#half-green {
+		position: absolute;
+		top: 10vh;
+	height: 90%;
+	width: 55%;
+	background-color: rgb(90, 191, 93);
+	background-size: cover;
+}
+	#smash-text {
+	font-size: 25vh;
+	z-index: 1;
+	top: 15vh;
+	left: 3vh;
+	font-family: 'Saira Stencil One', cursive;
+	writing-mode: vertical-lr;
+	color: #2c5b51; 
+}
+
+	#smash-text span {
+	color: #9d484f; 
+}
+}
+
+
+
+
+
+
+

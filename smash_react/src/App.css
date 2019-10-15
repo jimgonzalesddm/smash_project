@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Saira Stencil One', cursive;*/
+  font-family: 'Kanit', sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+	position: relative;
+	height: 100vh;
+}
+
+#location-icon {
+	position: fixed;
+	color: #960A0A;
+	bottom: 10px;
+	left: 5px;
+	text-shadow: 3px 6px rgba(140, 135, 135, .75);
+}
+#location-icon:hover {
+	cursor: pointer;
+}
+#modal-gmaps .modal-header {
+	background-color: #2c5b51;
+	color: #fff;
+}
+#modal-gmaps .modal-footer {
+	background-color: #9d484f;
+	color: #fff;
+}
+.modal-header h5 {
+	font-family: 'Saira Stencil One', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kanit|Saira+Stencil+One&display=swap');
+
+

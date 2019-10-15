@@ -1,0 +1,47 @@
+.comment-card {
+	width: 75%;
+	height: 50%;
+}
+
+.commentArea {
+	background-color: rgb(245, 245, 245);
+	padding: 0.5em;
+	/*border: 1px solid black;*/
+	border-radius: 100px;
+}
+
+.submit-edit:hover {
+	cursor: pointer;
+}
+
+.card-text {
+	font-size: small;
+}
+
+
+
+
+
+
+
+
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	.commentArea-div {
+		padding: 0;
+	}
+	.commentArea p {
+		font-size: 10px;
+		margin:0;
+		padding: 0;
+	}
+
+	.username-comment {
+		font-size: 10px;
+	}
+}

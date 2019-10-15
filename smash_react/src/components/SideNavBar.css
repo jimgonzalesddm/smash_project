@@ -1,0 +1,230 @@
+/* Sidenav */
+.mySidenav{
+	position: fixed;
+	z-index: 11;
+}
+
+/* Style the links inside the sidenav */
+#home,
+.mySidenav .book-online,
+.mySidenav .bookings,
+.mySidenav .messages,
+.mySidenav #contact-us-notUser,
+.mySidenav #contact-us-user,
+.mySidenav #profile,
+.mySidenav #logout-guest,
+.mySidenav #logout-admin,
+.mySidenav #login {
+	position: absolute; /* Position them relative to the browser window */
+	left: -80px; /* Position them outside of the screen */
+	transition: 0.3s; /* Add transition on hover */
+	padding: 15px; /* 15px padding */
+	width: 100px; /* Set a specific width */
+	text-decoration: none; /* Remove underline */
+	font-size: 20px; /* Increase font size */
+	color: white; /* White text color */  
+}
+
+.mySidenav #home:hover,
+.mySidenav .bookings:hover,
+.mySidenav .messages:hover,
+.mySidenav #contact-us-notUser:hover,
+.mySidenav #contact-us-user:hover,
+.mySidenav #profile:hover, 
+.mySidenav #logout-guest:hover,
+.mySidenav #logout-admin:hover,
+.mySidenav #login:hover {
+	left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+
+/* The about link: 20px from the top with a green background */
+#home,
+#profile {
+	top: 20px;
+	background-color: #2c5b51;
+}
+
+.mySidenav .bookings {
+	top: 90px;
+	background-color: #9d484f;
+	border-color: #fffffb; 
+	width: 180px;
+	left: -160px;
+}
+
+.mySidenav #contact-us-notUser,
+.mySidenav .messages,
+.mySidenav #logout-guest {
+	top: 160px;
+	background-color: #2c5b51;
+	border-color: #fffffb; 
+	width: 150px;
+	left: -130px;
+}
+
+.mySidenav #logout-admin,
+#login
+ {
+	top: 230px;
+	background-color: #9d484f;
+  	border-color: #fffffb; 
+}
+
+.mySidenav #contact-us-notUser {
+	width: 180px;
+  	left: -160px;
+}
+
+.mySidenav #contact-us-user {
+	width: 160px;
+  	left: -140px;
+}
+
+/*.mySidenav #logout-guest {
+	top: 300px;
+	background-color: #2c5b51;
+  	border-color: #fffffb;
+}*/
+
+.mySidenav  #profile,
+.mySidenav  #logout-guest,
+.mySidenav  #logout-admin {
+	width: 120px;
+	left: -100px;
+}
+
+
+
+
+
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	#home,
+	.mySidenav .bookings,
+	.mySidenav .messages,
+	.mySidenav #contact-us-notUser,
+	.mySidenav #contact-us-user,
+	.mySidenav #profile,
+	.mySidenav #logout-guest,
+	.mySidenav #logout-admin,
+	.mySidenav #login {
+	  left: 0px; 
+	  padding: 10px; /* 15px padding */
+	  font-size: 10px; /* Increase font size */
+	  width: 60px;
+	  padding-left: 5px;
+	  text-align: center;
+	 
+	}
+	.mySidenav .bookings {
+		left: 60px;
+		top: 20px;
+	}
+
+	.mySidenav .bookings span,
+	.mySidenav #contact-us-notUser span {
+		display: none;
+	}
+
+	.mySidenav .messages,
+	.mySidenav #logout-guest,
+	.mySidenav #contact-us-notUser {
+		left: 120px;
+		top: 20px;	
+	}
+
+	.mySidenav #logout-admin,
+	.mySidenav #login {
+		left: 180px;
+		top: 20px;
+	}
+
+	.mySidenav .bookings:hover {
+		left: 60px;
+	}
+
+	.mySidenav .messages:hover,
+	.mySidenav #logout-guest:hover,
+	.mySidenav #contact-us-notUser:hover {
+		left: 120px;
+	}
+
+	.mySidenav #logout-admin:hover,
+	.mySidenav #login:hover {
+		left: 180px;
+	}
+}
+
+
+/*tablet style*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	#home,
+	.mySidenav .bookings,
+	.mySidenav .messages,
+	.mySidenav #contact-us-notUser,
+	.mySidenav #contact-us-user,
+	.mySidenav #profile,
+	.mySidenav #logout-guest,
+	.mySidenav #logout-admin,
+	.mySidenav #login {
+	  left: 40px; 
+	  padding: 10px; /* 15px padding */
+	  font-size: 15px; /* Increase font size */
+	  width: 100px;
+	  padding-left: 5px;
+	  padding: 15px;
+	 
+	}
+	.mySidenav .bookings {
+		left: 140px;
+		top: 20px;
+	}
+
+	.mySidenav .bookings span,
+	.mySidenav #contact-us-notUser span {
+		display: none;
+	}
+
+	.mySidenav .messages,
+	.mySidenav #logout-guest,
+	.mySidenav #contact-us-notUser  {
+		left: 240px;
+		top: 20px;	
+	}
+
+	.mySidenav #logout-admin,
+	.mySidenav #login {
+		left: 340px;
+		top: 20px;
+	}
+
+	.mySidenav #home:hover {
+		left:40px;
+	}
+
+	.mySidenav .bookings:hover {
+		left: 140px;
+	}
+
+	.mySidenav .messages:hover,
+	.mySidenav #logout-guest:hover,
+	.mySidenav #contact-us-notUser:hover {
+		left: 240px;
+	}
+
+	.mySidenav #logout-admin:hover,
+	.mySidenav #login:hover {
+		left: 340px;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+/*body {
+            background-color: #eeeeee;
+        }*/
+.post-container {
+	height: 50vh;
+	position: absolute;
+	top: 10vh;
+	left: 20%;
+	z-index: 10;
+}

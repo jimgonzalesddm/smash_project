@@ -1,0 +1,332 @@
+.book-jumbo {
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 5vh;
+	background-color: #fffffb;
+}
+
+
+.openinghrs {
+	height: 50vh;
+	width: 75%;
+	border: 10px solid  #fffffb;
+	z-index: 2;
+	position: absolute;
+	top: 20vh;
+}
+
+.openinghrs h1 {
+	font-size: 50px;
+}
+
+.openinghrs p {
+	font-size: 25px;
+}
+
+#jumbo-img {	
+	background-image: url('../images/bd6.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*filter: blur(2px);
+  	-webkit-filter: blur(2px);*/
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.book-jumbo-second {
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 5vh;
+	background-color: #fffffb;
+	position: relative;
+}
+
+#blue-div {
+	background-color: #0f4b60;
+	height: 100%;
+	width: 60%;
+	position: relative;
+
+}
+
+#blue-div h3 {
+	writing-mode: vertical-rl;
+	color: #fffffb;
+	font-family: 'Saira Stencil One', cursive;
+	position: absolute;
+	bottom: 0;
+	/*text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;*/
+	position: absolute;
+}
+
+#blue-div h3:hover {
+	font-weight: bolder;
+}
+
+.booking-table {
+	height: 55vh;
+	width: 70%;
+	position: absolute;
+	top: 25vh;
+	right: 10%;
+	background-color: #0f4b60;
+}
+
+.booking-table:hover {
+	cursor: pointer;
+}
+
+.booking-table th {
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(77, 74, 66);
+}
+
+.tableheader {
+	background-color:  rgb(77, 74, 66);
+
+}
+.tableheader th {
+	color: rgb(201, 157, 12);
+}
+
+#blue-div:before {
+	content: '';
+    display:block;
+    height:90vh;
+    width: 10%;
+   	-webkit-transform: skew(-30deg, 0deg);
+    background: red;
+   left: 200px;
+    position:absolute;
+    background-color: #fff;
+}
+
+.book-jumbo-third {
+	background-image: url('../images/bd8.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	margin-bottom: 0px;
+	padding-top: 20vh;
+	background-color: #fffffb;
+	position: relative;
+}
+.reservation-table {
+	position: absolute;
+	bottom: 10vh;
+	left: 10%;
+	z-index: 5;
+	width: 70%;
+}
+
+.book-jumbo-third h3 {
+	position: absolute;
+	bottom: 0;
+	right: 2%;
+	color: #fffffb;
+	font-family: 'Saira Stencil One', cursive;
+	z-index: 5;
+}
+
+/*
+#third-jumbo-div {
+	background-image: url('../images/bd8.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 50%;
+	width: 60%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}*/
+
+
+/*#court1,
+#court3 {
+	color: rgb(77, 74, 66);
+}*/
+
+/*#openinghrs {
+	background-color: #2b2a2b;
+	width: 50%;
+	height: 60vh;
+	
+}*/
+
+
+#text {
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	z-index: 1;
+	margin: 0;
+}
+
+#slanted {	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 0;
+	width: 0;
+	border-right: 75px solid #dedede;
+	border-left: 50px solid transparent;
+	border-bottom: 50px solid #dedede;
+}
+
+
+
+
+
+
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	.openinghrs {
+		height: 50vh;
+		width: 75%;
+		border: 5px solid  #fffffb;
+		z-index: 2;
+		position: absolute;
+		
+	}
+
+	.openinghrs h1 {
+		font-size: 25px;
+	}
+
+	.openinghrs p {
+		font-size: 15px;
+	}
+
+
+	#blue-div:before {
+	    height:15vh;
+	    width: 20%;
+	   	-webkit-transform: skew(50deg, 0deg);
+	   left: 150px;
+	}
+
+	.booking-table {
+		height: 40vh;
+		left: 10px;
+		position: absolute;
+		top: 20vh;
+		width: 95%;
+		background-color: #0f4b60;
+		  /*transform:rotate(90deg);*/
+	}
+
+
+	.reservation-table {
+		position: absolute;
+		left:0;
+		height: 40vh;
+		width: 95%;
+	}
+
+	.booking-table th {
+		font-size: 10px;
+	}
+
+	.booking-table td {
+		font-size: 10px;
+	}
+
+}
+
+/*tablet style*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.openinghrs {
+		top: 20vh;		
+	}
+
+	.booking-table {
+		height: 40vh;
+		left: 10%;
+		width: 80%;
+		top: 20vh;
+	}
+/*	.booking-table {
+	height: 55vh;
+	width: 70%;
+	position: absolute;
+	top: 25vh;
+	right: 10%;
+	background-color: #0f4b60;
+}*/
+
+	#blue-div:before {
+	    height:15vh;
+	    width: 20%;
+	   	-webkit-transform: skew(50deg, 0deg);
+	   left: 150px;
+	}
+
+	.reservation-table {
+		position: absolute;
+		left:0;
+		height: 40vh;
+		width: 95%;
+	}
+}
+
+
+/*.left, .right {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  background: #000;
+  float: left;
+}
+
+.left:after {
+  content: '';
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #000;
+  border-bottom: 50px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+.right {
+  margin-left: 60px;
+  width: 100px;
+}
+
+.right:before {
+  content: '';
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 100px solid #000;
+  border-left: 50px solid transparent;
+  border-right: 0px solid #000;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+*/

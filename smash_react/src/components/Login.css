@@ -1,0 +1,34 @@
+* {
+	/*font-family: 'Saira Stencil One', cursive;*/
+	/*font-family: 'Libre Franklin', sans-serif;*/
+}
+
+.card-image {
+	background-image: url(../images/feathers.jpg);
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.logregicon,
+.sign-up-text,
+.login-text {
+	color: rgb(107, 79, 48);
+}
+
+#nav-ul {
+	background-color: #2b2a2b;
+}
+
+#nav-ul li:hover {
+	cursor: pointer;
+}
+#closeBtn-login,
+#closeBtn-register {
+	background-color: #2b2a2b;
+}
+/*#signinBtn {
+	background-color: #a71f23;
+}*/
+

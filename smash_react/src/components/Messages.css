@@ -1,0 +1,102 @@
+.jumbo-msgs {
+	background-color: #fff;
+	background-image:
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+	height: 100vh;
+	width: 100%;
+	padding: 0;
+	position: relative;
+	/*z-index: -1;*/
+}
+
+#mail-img {
+	height: 100vh;
+	width: 30%;
+	position: absolute;
+	right: 0;
+}
+
+.mail-icon,
+.trash-icon,
+.back {
+	color: rgb(50, 139, 168);
+}
+
+.mail-icon:hover,
+.trash-icon:hover,
+.back:hover {
+	cursor: pointer;
+}
+
+#msg-table {
+	display:block;
+	overflow:auto;
+	height:50vh;
+	position: absolute;
+	top: 25vh;
+	left: 10%;
+	width: 80%;
+}
+
+.img-div {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.img-div h3 {
+	position: absolute;
+	bottom: 35%;
+	right: 23%;
+	color: #fffffb;
+	font-family: 'Saira Stencil One', cursive;
+	writing-mode: vertical-rl;
+	z-index: 3;
+}
+
+#td-msg-content {
+	height: 100px;
+	width: 300px;
+	overflow: scroll;
+	word-break: break-all;
+}
+
+
+
+/*.fixed_header tbody{
+  display:block;
+  overflow:auto;
+  height:200px;
+  width:100%;
+}
+.fixed_header thead tr{
+  display:block;
+}*/
+
+
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	#msg-table {
+		display:block;
+		overflow:auto;
+		height:50vh;
+		position: absolute;
+		left: 5%;
+		right: 0;
+		width: 95%;
+	}
+
+	.img-div h3 {
+		bottom: 20%;
+		right: 17%;
+	}
+}
+
+	

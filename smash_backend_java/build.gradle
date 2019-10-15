@@ -1,0 +1,33 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.zuitt'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation "javax.xml.bind:jaxb-api:2.2.11"
+	implementation "com.sun.xml.bind:jaxb-core:2.2.11"
+	implementation "com.sun.xml.bind:jaxb-impl:2.2.11"
+	implementation "javax.activation:activation:1.1.1"
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.6.RELEASE'
+
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-jackson
+	runtime group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.10.5'
+}

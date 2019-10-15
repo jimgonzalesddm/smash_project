@@ -1,0 +1,12 @@
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+	.no-bookings-yet {
+		position: absolute;
+		
+	}
+}

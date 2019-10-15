@@ -1,0 +1,83 @@
+.css.h7 {
+    font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+    margin-top: 0.97rem;
+}
+
+.x-icon:hover {
+	cursor: pointer;
+}
+
+.closeCommentBoxBtn:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#commentBtn::after {
+	content: none;
+    display: none;
+}
+.post-card {
+	margin-bottom: 5vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#post-content {
+	font-weight: bold;
+}
+
+
+
+
+
+/*.profpic {
+	height: 50%;
+	width: 50%;
+}*/
+/*media queries*/
+
+/*Mobile Style*/
+/*only screen (media type) --- (max-width)(media feature)*/
+/*only screen only for specific size (max-width)*/
+
+@media only screen and (max-width: 400px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+
+    .card-link {
+    	font-size: 5px; 
+    }
+    .post-name {
+    	font-size: 10px;
+    }
+
+    .post-card #post-content {
+    	font-size: 10px;
+    }
+
+    .dropdown-item,
+    .dropdown-header {
+    	font-size: 5px; 
+    }
+
+    .post-card img {
+    	width: 20px;
+    	height: 20px;
+    }
+
+
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}
